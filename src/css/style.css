@@ -1,0 +1,283 @@
+@import 'utilities.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+:root{
+    --primary:#3dcfd3;
+    --dark:#161616;
+    --white:#ffffff;
+    --ternary:#e7dbdb;
+    --light:#f2f2f2;
+    --danger:#c42828;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    background: var(--dark);
+}
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+header .container nav .left a{
+    color: var(--white);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+}
+header .container nav .left a:hover{
+    color: var(--primary);
+    font-weight: bold;
+    transition: all .4s ease;
+    
+}
+
+header .container nav .left .branding{
+    margin-right: 3rem;
+}
+
+.hero{
+    margin-top: 10px;
+}
+.hero .right img{
+    width: 400px;
+}
+.hero .left{
+    color: var(--white);
+}
+.hero .left h6{
+    color: var(--primary);
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+.hero .left h1{
+    margin-top: 1rem;
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2rem;
+    margin-bottom: 2rem;
+}
+.hero .left p{
+    margin-bottom: 2rem;
+}
+.hero .left h1 span{
+    color: var(--danger);
+}
+
+section{
+    padding: 6rem 0;
+}
+
+.fa-trophy,.fa-certificate,.fa-assistive-listening-systems,.fa-joomla,.fa-quote-right{
+	font-size: 55px;
+	display: flex;
+    justify-content: center;
+    color: #878787;
+}
+section.about .about-me-img{
+    height: 350px;
+}
+section.about h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+section.about span{
+    color: var(--danger);
+    font-weight: bold;
+}
+section.about h3{
+    font-size: 1rem;
+    margin-bottom: 1re;
+    font-weight: 400;
+}
+section.about h3 span{
+    color: var(--dark);
+    font-weight: bold;
+}
+section.about p{
+    margin-top: 1rem;
+}
+section .social{
+    margin-top: 1.5rem;
+}
+section .social a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+}
+.fa-youtube{
+    color: var(--danger);
+}
+.fa-instagram{
+    color: var(--danger);
+}
+.fa-twitter{
+    color: var(--primary);
+}
+.fa-pinterest{
+    color: var(--dark);
+}
+
+.section-heading{
+    color: var(--dark);
+    text-align: center;
+    line-height: 0.5rem;
+    margin-bottom: 1rem;
+}
+.section-heading span{
+    color: var(--primary);
+}
+.section-heading + p{
+    color: var(--dark);
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+section.services{
+    background: hsl(49, 64%, 85%);
+}
+section.services .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+}
+section.services .card-wrapper .cards .fa{
+    font-size: 4rem!important;
+    color: var(--primary);
+}
+section.services .card-wrapper .cards{
+    background: var(--white);
+    text-align: center;
+    padding: 2rem 0;
+    position: relative;
+}
+section.services .card-wrapper .cards i{
+    position: absolute;
+    top: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+section.services .card-wrapper .cards:hover{
+    background: var(--primary);
+    text-align: center;
+    padding: 2rem 0;
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+section.services .card-wrapper .cards:hover i{
+    color: var(--danger);
+    transition: all 0.7s linear;
+    font-size: 3rem!important;
+}
+
+/* frelancer */
+
+section.frelancer{
+    text-align: center;
+    background: var(--dark);
+}
+section.frelancer h1{
+    margin: 1rem;
+    color: var(--white);
+}
+
+section.frelancer p{
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+section.skills .container h1{
+    color: var(--dark);
+    margin: 1rem 0;
+    text-align: center;
+}
+section.skills .container h1 span{
+    color: var(--danger);
+}
+
+section.blog{
+    background: var(--white);
+}
+section.blog .blog-wrapper{
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+   
+    
+    
+}
+section.blog .blog-wrapper .card{
+    text-align: center;
+    width: 300px;
+    height: 400px;
+    color: var(--dark);
+    cursor: pointer;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;   
+}
+
+section.blog .container h1{
+    color: var(--dark);
+    margin: 1rem 0;
+    text-align: center;
+}
+section.blog .container h1 span{
+    color: var(--danger);
+}
+
+section.blog .card-wrapper .card img{
+    text-align: center;
+    width: 300px;
+    height: 200px;
+}
+section.blog .card-wrapper .card h1,p{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* footer */
+
+footer{
+    background: var(--dark);
+}
+footer .container{
+    text-align: center;
+    padding: 4rem;
+}
+footer .container{
+    text-align: center;
+    padding: 4rem;
+}
+footer .container .footer-link a{
+    margin-top: 1.2rem;
+    margin-right: 1rem;
+    
+}
+footer .container .footer-link a .fa{
+    font-size: 2.6rem!important;
+}
+footer .container .footer-link a .fa-facebook{
+    color: var(--primary);
+}
+footer .container .footer-link{
+    margin-top: 1.2rem;
+}
+footer .container .footer-link .fa-pinterest{
+    color: aquamarine;
+}
+
+/* javascript practice */
+
+#load-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+#less{
+    display: none;
+}
